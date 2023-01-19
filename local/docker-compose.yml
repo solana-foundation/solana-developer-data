@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+    postgres:
+        image: postgres:latest
+        restart: always
+        environment:
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=solana
+          - POSTGRES_DB=solana_analytics
+        logging:
+          options:
+            max-size: 10m
+            max-file: "3"
+        ports:
+          - '5432:5432'
