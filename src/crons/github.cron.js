@@ -23,38 +23,34 @@ let searchIndex = 0;
 
 let SEARCHFILENAMESORDER = [
   "package.json",
-  "package-lock.json",
-  "yarn.lock",
+  "package.json",
   "mod.go",
   "Cargo.toml",
   "Cargo.toml",
   "package.json",
-  "package-lock.json",
-  "yarn.lock",
   "package.json",
-  "package-lock.json",
-  "yarn.lock",
+  "package.json",
   "*.csproj",
 ];
+
 let SEARCHKEYWORDORDER = [
   common.constant.ANCHOR_WEB3_KEY_WORD,
-  common.constant.ANCHOR_WEB3_KEY_WORD,
-  common.constant.ANCHOR_WEB3_KEY_WORD,
+  common.constant.ANCHOR_WEB3_CORAL_KEY_WORD,
   common.constant.GO_KEY_WORD,
   common.constant.NATIVE_KEY_WORD,
   common.constant.ANCHOR_KEY_WORD,
   common.constant.METAPLEX_KEY_WORD,
-  common.constant.METAPLEX_KEY_WORD,
-  common.constant.METAPLEX_KEY_WORD,
-  common.constant.SOLANA_WEB3_KEY_WORD,
-  common.constant.SOLANA_WEB3_KEY_WORD,
+  common.constant.METAPLEX_FNDN_KEY_WORD,
   common.constant.SOLANA_WEB3_KEY_WORD,
   common.constant.DOT_NET_KEY_WORD,
 ];
+
 const TYPEMAP = {
   [common.constant.SOLANA_WEB3_KEY_WORD]: common.constant.WEB3_JS_TYPE,
   [common.constant.ANCHOR_WEB3_KEY_WORD]: common.constant.ANCHOR_JS_TYPE,
+  [common.constant.ANCHOR_WEB3_CORAL_KEY_WORD]: common.constant.ANCHOR_JS_TYPE,
   [common.constant.METAPLEX_KEY_WORD]: common.constant.NFT_TYPE,
+  [common.constant.METAPLEX_FNDN_KEY_WORD]: common.constant.NFT_TYPE,
   [common.constant.GO_KEY_WORD]: common.constant.GO_TYPE,
   [common.constant.NATIVE_KEY_WORD]: common.constant.NATIVE_TYPE,
   [common.constant.ANCHOR_KEY_WORD]: common.constant.ANCHOR_TYPE,
